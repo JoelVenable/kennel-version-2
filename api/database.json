@@ -1,0 +1,94 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "typeId": 2,
+      "name": "Jessica Younker",
+      "email": "jyounker@kennel.com",
+      "password": "applesauce"
+    }
+  ],
+  "userTypes": [
+    {
+      "id": 1,
+      "name": "Administrator",
+      "canAdopt": false,
+      "canEditAnimals": true,
+      "canTakeCareOfAnimals": false,
+      "canAssignCaretakers": true,
+      "canEditLocations": true,
+      "canEditEmployees": true,
+      "canViewEmployees": true
+    },
+    {
+      "id": 2,
+      "name": "Caretaker",
+      "canAdopt": false,
+      "canEditAnimals": false,
+      "canTakeCareOfAnimals": true,
+      "canAssignCaretakers": false,
+      "canEditLocations": false,
+      "canEditEmployees": false,
+      "canViewEmployees": true
+    },
+    {
+      "id": 3,
+      "name": "Owner",
+      "canAdopt": true,
+      "canEditAnimals": false,
+      "canTakeCareOfAnimals": false,
+      "canAssignCaretakers": false,
+      "canEditLocations": false,
+      "canEditEmployees": false,
+      "canViewEmployees": false
+    },
+    {
+      "id": 4,
+      "name": "Animal Intake Specialist",
+      "canAdopt": false,
+      "canEditAnimals": true,
+      "canTakeCareOfAnimals": false,
+      "canAssignCaretakers": true,
+      "canEditLocations": false,
+      "canEditEmployees": false,
+      "canViewEmployees": true
+    },
+    {
+      "id": 5,
+      "name": "Personnel Manager",
+      "canAdopt": false,
+      "canEditAnimals": false,
+      "canTakeCareOfAnimals": false,
+      "canAssignCaretakers": false,
+      "canEditLocations": false,
+      "canEditEmployees": true,
+      "canViewEmployees": true
+    }
+  ],
+  "employees": [
+    {
+      "id": 1,
+      "userId": 1,
+      "locationId": 1
+    }
+  ],
+  "locations": [
+    {
+      "id": 1,
+      "name": "Nashville North",
+      "address": "500 Puppy Way"
+    },
+    {
+      "id": 2,
+      "name": "Music Row",
+      "address": "10101 Binary Court"
+    },
+    {
+      "id": 3,
+      "name": "Nashville Airport",
+      "address": "1032 Donelson Pike"
+    }
+  ],
+  "animalCaretakers": [],
+  "animals": []
+}
