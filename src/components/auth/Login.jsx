@@ -1,5 +1,6 @@
 import React, { PureComponent } from "react";
-import { TextField, InputAdornment } from "@material-ui/core";
+import { TextField, InputAdornment, Button } from "@material-ui/core";
+import { AccountCircle, Security } from "@material-ui/icons";
 import Modal from "react-modal";
 import "./Login.css";
 
@@ -52,12 +53,46 @@ export class Login extends PureComponent {
       <Modal isOpen={this.state.isModalOpen} style={customStyles}>
         <div className="login-container">
           <h3 className="login-header">Please log in:</h3>
-          <TextField
-            className="login-textInput"
-            id="name"
-            label="User Name"
-            onChange={this.handleFieldChange}
-          />
+          <div className="login-fieldContainer">
+            <TextField
+              InputProps={{
+                startAdornment: (
+                  <InputAdornment position="start">
+                    <AccountCircle />
+                  </InputAdornment>
+                ),
+              }}
+              className="login-textInput"
+              id="name"
+              label="User Name"
+              onChange={this.handleFieldChange}
+            />
+          </div>
+          <div className="login-fieldContainer">
+            <TextField
+              InputProps={{
+                startAdornment: (
+                  <InputAdornment position="start">
+                    <Security />
+                  </InputAdornment>
+                ),
+              }}
+              className="login-textInput"
+              type="password"
+              id="password"
+              label="Password"
+              onChange={this.handleFieldChange}
+            />
+          </div>
+          <div className="login-buttonContainer">
+            <Button
+              className="login-button"
+              variant="contained"
+              color="primary"
+            >
+              Log in
+            </Button>
+          </div>
         </div>
       </Modal>
     );

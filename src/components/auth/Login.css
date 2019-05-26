@@ -12,4 +12,17 @@
 
 .login-textInput {
   width: 100%;
+  margin-bottom: 3rem;
+}
+
+.login-button {
+  float: right;
+}
+
+.login-fieldContainer {
+  margin: 1rem;
+}
+
+.login-buttonContainer {
+  margin: 1rem;
 }

@@ -12,12 +12,13 @@ const endpoints = {
 export const API = {
   users: {
     getAll: () => endpoints.users.read(),
+    getWithUserType: (id) => endpoints.users.read(`/${id}?_expand=userType`),
   },
   userTypes: {
     getAll: () => endpoints.userTypes.read(),
   },
   employees: {
-    getAll: () => endpoints.employees.read(),
+    getAll: () => endpoints.employees.read(`?_expand=user&_expand=location`),
   },
   locations: {
     getAll: () => endpoints.locations.read(),
@@ -42,7 +43,7 @@ function Endpoint(url) {
   };
   this.read = (params) => {
     let newURL = url;
-    if (params) newURL += `/${params}`;
+    if (params) newURL += `${params}`;
     return fetch(newURL).then((response) => response.json());
   };
   this.update = (id, object) => {

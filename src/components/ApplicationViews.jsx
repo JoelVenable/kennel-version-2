@@ -6,28 +6,31 @@ import { Login } from "./auth/Login";
 
 export class ApplicationViews extends PureComponent {
   state = {
-    employees: [
-      {
-        id: 1,
-        name: "Jessica Younker",
-      },
-    ],
-    locations: [
-      {
-        name: "Nashville North",
-        address: "500 Puppy Way",
-      },
-    ],
+    employees: [],
+    locations: [],
     users: [],
     userTypes: [],
     animalCaretakers: [],
     animals: [],
   };
 
+  updateStateFor = async (endpoint) => {
+    this.setState({ [endpoint]: await API[endpoint].getAll() });
+  };
+
+  async componentDidMount() {
+    this.setState({
+      employees: await API.employees.getAll(),
+      locations: await API.locations.getAll(),
+      users: await API.users.getAll(),
+      userTypes: await API.userTypes.getAll(),
+      animalCaretakers: await API.animalCaretakers.getAll(),
+      animals: await API.animals.getAll(),
+    });
+  }
   render() {
     return (
       <div>
-        <Login />
         <LocationList locations={this.state.locations} />
         <EmployeeList employees={this.state.employees} />
       </div>
