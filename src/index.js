@@ -1,5 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { ApplicationViews } from "./components/ApplicationViews";
+import "./styles/main.css";
+import { Kennel } from "./Kennel";
+import { BrowserRouter as Router } from "react-router-dom";
 
-ReactDOM.render(<ApplicationViews />, document.getElementById("root"));
+ReactDOM.render(
+  <Router>
+    <Kennel />
+  </Router>,
+  document.getElementById("root")
+);

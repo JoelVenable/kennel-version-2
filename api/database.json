@@ -2,7 +2,7 @@
   "users": [
     {
       "id": 1,
-      "typeId": 2,
+      "userTypeId": 2,
       "name": "Jessica Younker",
       "email": "jyounker@kennel.com",
       "password": "applesauce"
@@ -90,5 +90,22 @@
     }
   ],
   "animalCaretakers": [],
-  "animals": []
+  "animals": [
+    {
+      "id": 1,
+      "name": "Bilby",
+      "breed": "Pinscher",
+      "gender": "Female",
+      "locationId": 1,
+      "isAdopted": false
+    },
+    {
+      "id": 2,
+      "name": "Apples",
+      "breed": "Schitzu",
+      "gender": "Female",
+      "locationId": 2,
+      "isAdopted": false
+    }
+  ]
 }

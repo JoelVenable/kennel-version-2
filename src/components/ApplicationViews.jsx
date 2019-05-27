@@ -1,8 +1,10 @@
 import React, { PureComponent } from "react";
+import { Route } from "react-router-dom";
 import { EmployeeList } from "./Employees/EmployeeList";
 import { API } from "../modules/API";
 import { LocationList } from "./Locations/LocationList";
 import { Login } from "./auth/Login";
+import { AnimalList } from "./Animals/AnimalList";
 
 export class ApplicationViews extends PureComponent {
   state = {
@@ -30,9 +32,33 @@ export class ApplicationViews extends PureComponent {
   }
   render() {
     return (
-      <div>
-        <LocationList locations={this.state.locations} />
-        <EmployeeList employees={this.state.employees} />
+      <div className="main-content-area">
+        <Route
+          exact
+          path="/"
+          render={(props) => {
+            return <LocationList locations={this.state.locations} />;
+          }}
+        />
+        <Route
+          exact
+          path="/employees"
+          render={(props) => {
+            return (
+              <EmployeeList
+                employees={this.state.employees}
+                userTypes={this.state.userTypes}
+              />
+            );
+          }}
+        />
+        <Route
+          exact
+          path="/animals"
+          render={(props) => {
+            return <AnimalList animals={this.state.animals} />;
+          }}
+        />
       </div>
     );
   }

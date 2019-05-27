@@ -3,7 +3,6 @@ import { TextField, InputAdornment, Button } from "@material-ui/core";
 import { AccountCircle, Security } from "@material-ui/icons";
 import Modal from "react-modal";
 import "./Login.css";
-
 const customStyles = {
   overlay: {
     position: "absolute",

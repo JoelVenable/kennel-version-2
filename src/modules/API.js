@@ -27,7 +27,7 @@ export const API = {
     getAll: () => endpoints.animalCaretakers.read(),
   },
   animals: {
-    getAll: () => endpoints.animals.read(),
+    getAll: () => endpoints.animals.read("?_expand=location"),
   },
 };
 
