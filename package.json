@@ -43,6 +43,7 @@
     "postcss": "^7.0.16",
     "postcss-cli": "^6.1.2",
     "postcss-nested": "^4.1.2",
-    "prettier": "^1.17.1"
+    "prettier": "^1.17.1",
+    "react-router-dom": "^5.0.0"
   }
 }

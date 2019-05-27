@@ -1,0 +1,48 @@
+.employeeItem * {
+  margin: 0;
+}
+
+.employeeItem {
+  width: 18rem;
+}
+
+.employeeItem-header {
+  font-size: 1.3rem;
+}
+
+.employeeItem-iconContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2rem;
+  height: 2rem;
+  margin-right: 1rem;
+  background-color: #ddd;
+}
+
+.employeeItem-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0.2rem auto;
+}
+
+.employeeItem-icon {
+  color: rgb(70, 127, 138);
+}
+
+.employeeItem-imageContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.employeeItem-image {
+  border-radius: 50%;
+}
+
+.employeeItem-actions {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
