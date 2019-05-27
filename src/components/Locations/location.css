@@ -1,0 +1,24 @@
+.location-cardContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.location-card {
+  width: 30%;
+}
+
+.location-cardInner {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.location-imageContainer img {
+  width: 100%;
+}
+
+.location-linkContainer {
+  float: right;
+  margin-bottom: 0.6rem;
+}

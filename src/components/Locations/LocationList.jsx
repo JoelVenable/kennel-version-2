@@ -1,6 +1,7 @@
 import React, { PureComponent } from "react";
 import { Card } from "@material-ui/core";
 import { LocationItem } from "./LocationItem";
+import "./location.css";
 
 export class LocationList extends PureComponent {
   expandLocations = () => {
