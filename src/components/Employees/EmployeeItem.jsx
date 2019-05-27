@@ -8,7 +8,6 @@ export default class EmployeeItem extends PureComponent {
     let userType = this.props.userTypes.find(
       (type) => type.id === this.props.employee.user.userTypeId
     );
-    console.log(userType);
     return userType.name;
   }
   render() {
@@ -16,7 +15,11 @@ export default class EmployeeItem extends PureComponent {
       <Card key={this.props.employee.id} className="employeeItem">
         <div className="card-inner">
           <div className="employeeItem-imageContainer">
-            <img src={personImage} className="employeeItem-image" />
+            <img
+              src={personImage}
+              alt="sample person"
+              className="employeeItem-image"
+            />
           </div>
           <div className="employeeItem-row">
             <div className="employeeItem-iconContainer">

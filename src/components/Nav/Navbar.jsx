@@ -24,7 +24,7 @@ export class Navbar extends PureComponent {
   makeLinks() {
     return this.state.links.map((link) => {
       return (
-        <li className="navbar-item">
+        <li key={link.name} className="navbar-item">
           <Link className="navbar-link" to={link.href}>
             {link.name}
           </Link>
@@ -37,7 +37,7 @@ export class Navbar extends PureComponent {
     return (
       <AppBar color="primary" position="static">
         <div className="navbar-outerContainer">
-          <Typography variant="title" className="navbar-title">
+          <Typography variant="h2" className="navbar-title">
             Kennel
           </Typography>
           <div className="navbar-linkContainer">

@@ -2,10 +2,164 @@
   "users": [
     {
       "id": 1,
-      "userTypeId": 2,
-      "name": "Jessica Younker",
-      "email": "jyounker@kennel.com",
-      "password": "applesauce"
+      "name": "Julianne Wennington",
+      "email": "jwennington0@mysql.com",
+      "password": "Julianne",
+      "userTypeId": 2
+    },
+    {
+      "id": 2,
+      "name": "Modestia Miskelly",
+      "email": "mmiskelly1@4shared.com",
+      "password": "Modestia",
+      "userTypeId": 2
+    },
+    {
+      "id": 3,
+      "name": "Abelard Tawse",
+      "email": "atawse2@google.pl",
+      "password": "Abelard",
+      "userTypeId": 2
+    },
+    {
+      "id": 4,
+      "name": "Bart Gornall",
+      "email": "bgornall3@amazon.co.uk",
+      "password": "Bart",
+      "userTypeId": 2
+    },
+    {
+      "id": 5,
+      "name": "Kennan Dinse",
+      "email": "kdinse4@msn.com",
+      "password": "Kennan",
+      "userTypeId": 2
+    },
+    {
+      "id": 6,
+      "name": "Drusi Bawdon",
+      "email": "dbawdon5@uiuc.edu",
+      "password": "Drusi",
+      "userTypeId": 5
+    },
+    {
+      "id": 7,
+      "name": "My Shaudfurth",
+      "email": "mshaudfurth6@dion.ne.jp",
+      "password": "My",
+      "userTypeId": 4
+    },
+    {
+      "id": 8,
+      "name": "Suzanna de Verson",
+      "email": "sde7@netlog.com",
+      "password": "Suzanna",
+      "userTypeId": 2
+    },
+    {
+      "id": 9,
+      "name": "Blinni Greest",
+      "email": "bgreest8@list-manage.com",
+      "password": "Blinni",
+      "userTypeId": 2
+    },
+    {
+      "id": 10,
+      "name": "Cornall Houlridge",
+      "email": "choulridge9@buzzfeed.com",
+      "password": "Cornall",
+      "userTypeId": 4
+    },
+    {
+      "id": 11,
+      "name": "Eleonore Brigge",
+      "email": "ebriggea@nytimes.com",
+      "password": "Eleonore",
+      "userTypeId": 4
+    },
+    {
+      "id": 12,
+      "name": "Frasco Laskey",
+      "email": "flaskeyb@mlb.com",
+      "password": "Frasco",
+      "userTypeId": 2
+    },
+    {
+      "id": 13,
+      "name": "Enid Oneil",
+      "email": "eoneilc@weather.com",
+      "password": "Enid",
+      "userTypeId": 2
+    },
+    {
+      "id": 14,
+      "name": "Terry Tregear",
+      "email": "ttregeard@auda.org.au",
+      "password": "Terry",
+      "userTypeId": 4
+    },
+    {
+      "id": 15,
+      "name": "Ambrosi McQuirter",
+      "email": "amcquirtere@free.fr",
+      "password": "Ambrosi",
+      "userTypeId": 3
+    },
+    {
+      "id": 16,
+      "name": "Ulises Janout",
+      "email": "ujanoutf@constantcontact.com",
+      "password": "Ulises",
+      "userTypeId": 4
+    },
+    {
+      "id": 17,
+      "name": "Guido Algeo",
+      "email": "galgeog@telegraph.co.uk",
+      "password": "Guido",
+      "userTypeId": 2
+    },
+    {
+      "id": 18,
+      "name": "Delmor Lock",
+      "email": "dlockh@networkadvertising.org",
+      "password": "Delmor",
+      "userTypeId": 2
+    },
+    {
+      "id": 19,
+      "name": "Minnnie Wooton",
+      "email": "mwootoni@webeden.co.uk",
+      "password": "Minnnie",
+      "userTypeId": 5
+    },
+    {
+      "id": 20,
+      "name": "Dulciana Stave",
+      "email": "dstavej@craigslist.org",
+      "password": "Dulciana",
+      "userTypeId": 2
+    },
+    {
+      "id": 21,
+      "name": "Tiffani MacKonochie",
+      "email": "tmackonochiek@issuu.com",
+      "password": "Tiffani",
+      "userTypeId": 4
+    },
+    {
+      "id": 22,
+      "name": "Myriam Meek",
+      "email": "mmeekl@wikimedia.org",
+      "password": "Myriam",
+      "userTypeId": 4
+    },
+    {
+      "id": 23,
+      "name": "Kirsteni Jagoe",
+      "email": "kjagoem@yolasite.com",
+      "password": "Kirsteni",
+      "userTypeId": 2
     }
   ],
   "userTypes": [
@@ -66,11 +220,27 @@
     }
   ],
   "employees": [
-    {
-      "id": 1,
-      "userId": 1,
-      "locationId": 1
-    }
+    { "id": 1, "userId": 1, "locationId": 3 },
+    { "id": 2, "userId": 2, "locationId": 3 },
+    { "id": 3, "userId": 3, "locationId": 2 },
+    { "id": 4, "userId": 4, "locationId": 3 },
+    { "id": 5, "userId": 5, "locationId": 2 },
+    { "id": 6, "userId": 6, "locationId": 1 },
+    { "id": 7, "userId": 7, "locationId": 1 },
+    { "id": 8, "userId": 8, "locationId": 1 },
+    { "id": 9, "userId": 9, "locationId": 1 },
+    { "id": 10, "userId": 10, "locationId": 2 },
+    { "id": 11, "userId": 11, "locationId": 1 },
+    { "id": 12, "userId": 12, "locationId": 2 },
+    { "id": 13, "userId": 13, "locationId": 3 },
+    { "id": 14, "userId": 14, "locationId": 3 },
+    { "id": 15, "userId": 15, "locationId": 3 },
+    { "id": 16, "userId": 16, "locationId": 2 },
+    { "id": 17, "userId": 17, "locationId": 3 },
+    { "id": 18, "userId": 18, "locationId": 2 },
+    { "id": 19, "userId": 19, "locationId": 3 },
+    { "id": 20, "userId": 20, "locationId": 3 },
+    { "id": 21, "userId": 21, "locationId": 3 }
   ],
   "locations": [
     {

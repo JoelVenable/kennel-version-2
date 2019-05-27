@@ -5,7 +5,7 @@ import "./animal.css";
 export class AnimalList extends PureComponent {
   makeAnimalItems = () => {
     return this.props.animals.map((animal) => {
-      return <AnimalItem animal={animal} />;
+      return <AnimalItem key={animal.id} animal={animal} />;
     });
   };
 

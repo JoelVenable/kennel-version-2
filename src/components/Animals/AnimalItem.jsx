@@ -1,17 +1,15 @@
 import React, { PureComponent } from "react";
 import { Card, Button } from "@material-ui/core";
-import { Person, Email, MyLocation, Check } from "@material-ui/icons";
+import { Check } from "@material-ui/icons";
 import dog from "./DogIcon.svg";
 
 export default class AnimalItem extends PureComponent {
   render() {
-    console.log(this.props.animal);
-
     return (
       <Card key={this.props.animal.id} className="animalItem">
         <div className="card-inner">
           <div className="animalItem-imageContainer">
-            <img src={dog} className="animalItem-image" />
+            <img src={dog} alt="sample dog" className="animalItem-image" />
           </div>
           <div className="employeeItem-row">
             <div className="employeeItem-iconContainer">

@@ -6,7 +6,11 @@ export class EmployeeList extends PureComponent {
   makeEmployeeItems = () => {
     return this.props.employees.map((employee) => {
       return (
-        <EmployeeItem employee={employee} userTypes={this.props.userTypes} />
+        <EmployeeItem
+          key={employee.id}
+          employee={employee}
+          userTypes={this.props.userTypes}
+        />
       );
     });
   };
@@ -15,7 +19,9 @@ export class EmployeeList extends PureComponent {
     return (
       <article>
         <h1>Employee List</h1>
-        {this.makeEmployeeItems()}
+        <div className="employeeList-cardContainer">
+          {this.makeEmployeeItems()}
+        </div>
       </article>
     );
   }

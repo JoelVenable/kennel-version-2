@@ -1,9 +1,17 @@
+.employeeList-cardContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
 .employeeItem * {
   margin: 0;
 }
 
 .employeeItem {
   width: 18rem;
+  margin-bottom: 1.8rem;
 }
 
 .employeeItem-header {

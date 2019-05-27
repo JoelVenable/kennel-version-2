@@ -3,7 +3,6 @@ import { Route } from "react-router-dom";
 import { EmployeeList } from "./Employees/EmployeeList";
 import { API } from "../modules/API";
 import { LocationList } from "./Locations/LocationList";
-import { Login } from "./auth/Login";
 import { AnimalList } from "./Animals/AnimalList";
 
 export class ApplicationViews extends PureComponent {
