@@ -1,0 +1,23 @@
+.animalList-cardContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.animalItem {
+  width: 30%;
+}
+
+.animalItem-imageContainer {
+  width: 100%;
+}
+
+.animalItem-image {
+  width: 100%;
+}
+
+.animalItem-buttonContainer {
+  float: right;
+  margin-bottom: 0.6rem;
+}
